@@ -8,7 +8,7 @@ async function main(){
         secure: true,
         auth: {
             user: "emerson@studiowp.com.br",
-            pass: "delt4000.2020@Dev"
+            pass: "--"
         }
     })
 
