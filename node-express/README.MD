@@ -44,3 +44,5 @@ Quando var router = express.Router()é chamado, um mini aplicativo ligeiramente 
 No exemplo acima, o código para a rota /dogs foi movido para seu próprio arquivo para não desorganizar o aplicativo principal . O código para /gatos e /pássaros seria estruturado de maneira semelhante em seus próprios arquivos. Ao separar esse código em três mini aplicativos , você pode trabalhar na lógica de cada um isoladamente e não se preocupar com como isso afetará os outros dois.
 
 Se você possui um código (middleware) que pertence a todas as três rotas, é possível colocá-lo no aplicativo principal antes das app.use(...)chamadas. Se você tiver um código (middleware) referente a apenas uma dessas rotas, poderá colocá-lo no arquivo apenas para essa rota.
+
+fonte: https://qastack.com.br/programming/28305120/differences-between-express-router-and-app-get
