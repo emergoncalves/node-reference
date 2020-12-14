@@ -6,12 +6,12 @@
 //===================================================================
 //app.js
 
-var express = require('express'),
+const express = require('express'),
     dogs    = require('./routes/dogs'),
     cats    = require('./routes/cats'),
     birds   = require('./routes/birds');
 
-var app = express();
+const app = express();
 
 app.use('/dogs',  dogs);
 app.use('/cats',  cats);
@@ -22,9 +22,9 @@ app.listen(3000);
 //====================================================
 //dogs.js
 
-var express = require('express');
+const express = require('express');
 
-var router = express.Router();
+const router = express.Router();
 
 router.get('/', function(req, res) {
     res.send('GET handler for /dogs route.');
