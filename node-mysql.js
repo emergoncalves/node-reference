@@ -2,8 +2,8 @@ var mysql = require('mysql');
 
 var con = mysql.createConnection({
   host: "localhost",
-  user: "admin",
-  password: "delt4000.2020",
+  user: "user",
+  password: "password",
   database: "mydb"
 });
 
