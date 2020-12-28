@@ -7,14 +7,14 @@ async function main(){
         port: 465,
         secure: true,
         auth: {
-            user: "emerson@studiowp.com.br",
+            user: "seu_email@gmail.com",
             pass: "--"
         }
     })
 
     let info = await transporter.sendMail({
         from: "Emerson Gonçalves",
-        to: "emerson.u.g@gmail.com, emerson.u.g@outlook.com",
+        to: "destinatario1@gmail.com, destinatario2@outlook.com",
         subject: "Email enviado usando Nodejs",
         text: "Opa!, que bom que recebeu essa mensagem",
         html: "<h1>Opa! que bom que você esta vendo isso</h1>"
