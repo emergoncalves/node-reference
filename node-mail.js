@@ -1,20 +1,20 @@
 const nodemailer = require('nodemailer');
 
-async function main(){
+function main(){
 
     const transporter = nodemailer.createTransport( {
-        host: "mail.studiowp.com.br",
+        host: "email-ssl.com.br",
         port: 465,
         secure: true,
         auth: {
-            user: "seu_email@gmail.com",
-            pass: "--"
+            user: "emerson@superfestval.com.br",
+            pass: "---"
         }
     })
 
-    let info = await transporter.sendMail({
-        from: "Emerson Gonçalves",
-        to: "destinatario1@gmail.com, destinatario2@outlook.com",
+    let info = transporter.sendMail({
+        from: "emerson@superfestval.com.br",
+        to: "emerson.u.g@gmail.com",
         subject: "Email enviado usando Nodejs",
         text: "Opa!, que bom que recebeu essa mensagem",
         html: "<h1>Opa! que bom que você esta vendo isso</h1>"
@@ -23,7 +23,7 @@ async function main(){
         console.log(info)
     })
 
-    console.log("Message sent: %s", info.messageId);
+    console.log("Message sent: %s");
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
     // Preview only available when sending through an Ethereal account
@@ -33,4 +33,4 @@ async function main(){
 
 }
 
-main().catch(console.error)
+main();
